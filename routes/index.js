@@ -6,7 +6,7 @@ var multer = require('multer');
 var storage = multer.diskStorage({
   destination: function(req, file, cb) {
     if(file.mimetype == 'image/jpeg'){
-      cb(null, 'uploads');
+      cb(null, 'Uploads');
     }else {
       cb(new Error("Chỉ được Upload File JPG"), false)
     }
